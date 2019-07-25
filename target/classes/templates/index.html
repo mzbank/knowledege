@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script th:src = "@{/js/jquery-3.2.1.js}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("button").eq(0).click(function () {
+                // $("#dodo").animate({
+                //     width:500
+                // },1000,function () {
+                //     alert("动画效果执行完毕！")
+                // })
+                $("#dodo").animate({
+                    marginLeft:500
+                },5000,function () {
+
+                })
+            })
+
+            $("button").eq(0).click(function () {
+                $("#toto").animate({
+                    marginLeft:500
+                },5000,function () {
+
+                })
+            })
+
+            $("button").eq(2).click(function () {
+
+            })
+        })
+    </script>
+    <title>TGo5商城</title>
+</head>
+<style>
+    #dodo{
+        background: yellow;
+        height: 200px;
+        width: 200px;
+    }
+    #toto{
+        background: tomato;
+        height: 200px;
+        width: 200px;
+    }
+    #momo{
+        background: green;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+<h2>TGo5首页</h2>
+<button>操作属性</button>
+<button>累加属性</button>
+<button>关键字</button>
+<a href="shopping.html">shopping</a>
+<div id="content"></div>
+<div id="dodo">1</div>
+<div id="toto">2</div>
+<div id="momo">3</div>
+
+</body>
+</html>
